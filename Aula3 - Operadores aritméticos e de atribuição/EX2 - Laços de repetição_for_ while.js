@@ -63,9 +63,34 @@ function meuDoWhile() {
 }
 
 //5. Aninhamento de Laços
-//6. Desafio
 
-meuPrimeiroLoop();
-meuArrayForOf(material_treino);
-meuWhileLoop();
-meuDoWhile();
+function meuLoopAninhado() {
+    for (let i = 1; i <= 5; i++) {
+        let linha = "";
+        for (let j = 1; j <= 5; j++) {
+            linha += "*";
+        }
+        console.log(linha);
+    }
+}
+//6. Desafio – Fibonacci (primeiros 10 números com for)
+function meuDesafioFibonacci() {
+    let anterior = 0;
+    let atual = 1;
+
+    console.log(anterior); // primeiro termo
+
+    for (let i = 1; i < 10; i++) {
+        console.log(atual);
+        const proximo = anterior + atual;
+        anterior = atual;
+        atual = proximo;
+    }
+}
+
+//meuPrimeiroLoop();
+//meuArrayForOf(material_treino);
+//meuWhileLoop();
+//meuDoWhile();
+//meuLoopAninhado();
+meuDesafioFibonacci();

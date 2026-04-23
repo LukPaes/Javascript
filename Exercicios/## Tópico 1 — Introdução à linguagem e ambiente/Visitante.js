@@ -12,5 +12,3 @@ if (!nome || nome.trim() === "") {
 } else {
   console.log(`Olá, ${nome.trim()}!`);
 }
- console.log(`Olá, ${nome.trim()}!`);   
- 
